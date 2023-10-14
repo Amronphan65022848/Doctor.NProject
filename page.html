@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="css/page.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+  <script src ="https://kit.fontawesome.com/67c66657c7.js"></script>
+</head>
+<body>
+
+
+
+ 
+  <nav>
+      <div class="icon">Doctor.N</div>
+      <div class="search_box">
+          <input type="search" placeholder="ค้นหา">
+          <span class=" fa fa-search"></span>
+      </div>
+      <ol>
+        <li><a href="#">หน้าหลัก</a></li>
+        <li><a href="news.html">ข่าวสาร</a></li>
+        <li><a href="notifications.html">การเเจ้งเตือน</a></li>
+        <li><a href="categories.html">หมวดหมู่</a></li>
+        
+      </ol>
+      <label for="check" class="bar">
+          <span class=" fa fa-bars" id="bars"></span>
+          <span class=" fa fa-times" id="times"></span>
+      </label>
+  </nav>
+  
+
+
+  
+
+
+  <div class="carousel clearfix">
+    <!-- <h2>"    "</h2> -->
+
+    <div class="carousel-view clearfix">
+      
+      <div class="box">
+        <p><img src="images/pic1.jpg" alt="image">
+         
+        </p>
+      </div>
+
+      <div class="box">
+        <p><img src="images/pic2.jpg" alt="image">
+         
+        </p>
+      </div>
+
+      <div class="box">
+        <p><img src="images/pic3.jpeg" alt="image">
+        
+        </p>
+      </div>
+
+      <div class="box">
+        <p><img src="images/pic1.jpg" alt="image">
+          
+        </p>
+      </div>
+
+      <div class="box">
+        <p><img src="images/pic2.jpg" alt="image">
+          
+        </p>
+      </div>
+
+      <div class="box">
+          <p><img src="images/pic3.jpeg" alt="image">
+        
+        </p>
+      </div>
+
+                
+
+    </div>
+    
+  </div>
+  <div class="set-content">
+    <!-- กระทู้คำถาม -->
+    <div class="new-post">
+      <img src="./images/pic6.jpg" class="profile" width="50px">
+      <p>ตั้งกระทู้คำถาม</p>
+      <button class="button">
+        <img src="./images/add.png" width="50px">
+      </button>
+    </div>
+
+    <!-- โพสต์คนอื่น     -->
+    <div class="post">
+      <!-- โปรไฟล์ ชื่อ -->
+      <div class="tag-profile">
+        <img src="./images/Screenshot 2023-10-01 120144.png" width="50px" height="50px" class="profile">
+        <p>Nuttapong_k</p>
+      </div>
+      <div class="content-post">
+        ถ้าอยู่เฉยๆเเล้วยิ้มคนเดียวมันหมายความว่าไงครับ
+      </div>
+      <!-- ปุ่มไลค์ คอมเม้น -->
+      <div class="tag-bottom">
+        <button class="button">
+          <img src="./images/like.png" width="30px">
+        </button>
+        <button class="button">
+          <img src="./images/comment.png" width="30px">
+        </button>
+      </div>
+    </div>
+
+    <div class="post">
+      <!-- โปรไฟล์ ชื่อ -->
+      <div class="tag-profile">
+        <img src="./images/Screenshot 2023-10-01 120144.png" width="50px" height="50px" class="profile">
+        <p>Nuttapong_k</p>
+      </div>
+      <div class="content-post">
+        เวลาเราพิมพ์งานนานๆเเล้วเจ็บนิ้ว<br><br><br><br> มันมีวิธีรักษาไหมครับ
+      </div>
+      <!-- ปุ่มไลค์ คอมเม้น -->
+      <div class="tag-bottom">
+        <button class="button">
+          <img src="./images/like.png" width="30px">
+        </button>
+        <button class="button">
+          <img src="./images/comment.png" width="30px">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $('.carousel-view').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  </script>
+</body>
+</html>

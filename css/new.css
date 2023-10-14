@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgba(228, 242, 245, 1);
+}
+nav{
+    display: flex;
+    width: 100%;
+    background: rgba(92, 192, 248, 0.83);
+    position: relative;
+    justify-content:space-between;
+    text-align: center;
+    padding: 15px 30px;
+    font-family: "Audiowide", sans-serif;
+   
+}
+nav .icon{
+    font-size: 40px;
+    font-weight: 800;
+    cursor: pointer;
+}
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+nav ol li{
+    margin: 0 2px;
+}
+nav ol li a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 15px 15px;
+}
+
+nav ol li:hover a{
+ 
+   color: rgb(1, 1, 1);
+}
+
+
+nav ol li a {
+    /* ... โค้ดเดิม ... */
+    text-decoration: none;
+    position: relative; 
+}
+
+nav ol li a::after {
+    content: '';
+    display: block;
+    width: 0; 
+    height: 2px; 
+    background-color: black; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease; 
+}
+
+nav ol li a:hover::after {
+    width: 50%; 
+}
+
+
+
+
+nav .search_box{
+    display: flex;
+    margin: auto;
+    height: 35px ;
+    line-height: 35px;
+}
+nav .search_box input{
+    border: none;
+    outline: none;
+    background: white;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 400px;
+}
+nav .search_box span{
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+    background: rgb(231, 231, 231);
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+nav .search_box span:hover{
+    color: #000000;
+}
+nav .search_box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: rgb(193, 188, 188);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1 ;
+    transition: 0.3s;
+}
+
+nav .search_box span:hover::after{
+    width: 100%;
+}
+nav .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+nav .bar span{
+position: absolute;
+color: rgb(0, 0, 0);
+font-size: 35px;
+
+}
+
+.flexbox{
+    border: #000000 solid 1px;
+    background-color: #ffffff;
+    width:90%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    
+}
+.item{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 350px;
+    margin-left: 30px;
+}
+.item-content {
+    display: flex;
+    
+}
+
+.text {
+    display: flex;
+     margin-left: 100px; 
+    justify-content:space-between;
+    font-size: 12px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 30px;
+    
+}
+/*กรอบรูป*/
+.item-content img{
+    border: rgb(0, 0, 0) solid 1px;
+}
+

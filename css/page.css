@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgba(228, 242, 245, 1);
+}
+nav{
+    display: flex;
+    width: 100%;
+    background: rgba(92, 192, 248, 0.83);
+    position: relative;
+    justify-content:space-between;
+    text-align: center;
+    padding: 15px 30px;
+    font-family: "Audiowide", sans-serif;
+   
+}
+nav .icon{
+    font-size: 40px;
+    font-weight: 800;
+    cursor: pointer;
+}
+nav ol{
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+nav ol li{
+    margin: 0 2px;
+}
+nav ol li a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 15px 15px;
+}
+
+nav ol li:hover a{
+ 
+   color: rgb(1, 1, 1);
+}
+
+
+nav ol li a {
+    /* ... โค้ดเดิม ... */
+    text-decoration: none;
+    position: relative; 
+}
+
+nav ol li a::after {
+    content: '';
+    display: block;
+    width: 0; 
+    height: 2px; 
+    background-color: black; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease; 
+}
+
+nav ol li a:hover::after {
+    width: 50%; 
+}
+
+
+
+
+nav .search_box{
+    display: flex;
+    margin: auto;
+    height: 35px ;
+    line-height: 35px;
+}
+nav .search_box input{
+    border: none;
+    outline: none;
+    background: white;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 400px;
+}
+nav .search_box span{
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+    background: rgb(231, 231, 231);
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+nav .search_box span:hover{
+    color: #000000;
+}
+nav .search_box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: rgb(193, 188, 188);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1 ;
+    transition: 0.3s;
+}
+
+nav .search_box span:hover::after{
+    width: 100%;
+}
+nav .bar{
+    position: relative;
+    margin: auto;
+    display: none;
+}
+nav .bar span{
+position: absolute;
+color: rgb(0, 0, 0);
+font-size: 35px;
+
+}
+
+
+body,html {
+    margin: 0px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.carousel {
+    width: 1150px;
+    margin: 30px auto;
+}
+
+.carousel h1 {
+    font-size: 36px;
+    margin: 0px 0px 30px 0px;
+    font-weight: normal;
+}
+
+.carousel .box {
+    float: left;
+    width: 33%;
+}
+
+.carousel .box p {
+    font-size: 20px;
+    color: #0067ab;
+    text-align: center;
+    margin: 0;
+}
+
+.carousel .box p img {
+    margin-bottom: 10px;
+    margin: auto;
+}
+
+.slick-prev, .slick-next {
+    background: url(../images//arrows.png);
+    width: 22px;
+    height: 33px;
+    position: absolute;
+    top: 30%;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: 100;
+}
+
+.slick-prev {
+    background-position: 0px;
+    left: 0px;
+}
+
+.slick-next {
+    background-position: -22px;
+    right: 0px;
+}
+
+@media only screen and (max-width: 1180px) {
+    .carousel {
+        width: 90%;
+    }
+}
+
+
+.set-content{
+    margin: auto;
+    width: 1150px;
+}
+.new-post{
+    margin: 30px 0px;
+    border: black solid 1px;
+    background-color: white;
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: 70px auto 70px;
+    align-items: center;
+}
+.profile{
+    border-radius: 50px;
+    
+}
+.post{
+    position: relative;
+    background-color: white;
+    margin-bottom: 40px;
+    border: black solid 1px;
+    padding: 15px;
+    min-height: 250px;
+    display: grid;
+    grid-template-rows: 70px auto 40px;
+}
+.tag-profile{
+   
+    display: grid;
+    grid-template-columns: 70px auto;
+    align-items: center;
+    
+}
+.content-post{
+    margin: 20px 0;
+}
+.tag-bottom{
+    display: grid;
+    grid-template-columns: 50px 50px auto;
+    column-gap: 10px;
+}
+.button{
+    background: none;
+    border: none;
+
+}
